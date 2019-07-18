@@ -1,0 +1,21 @@
+<!-- <p>
+  login works!
+</p> -->
+<h1 style="text-align:center">Login Form</h1><hr>
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Name:</label>
+    <input type="text" class="form-control" #nam id="nam">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" #pwd id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary"  (click)="ver(nam.value,pwd.value)">Submit</button>
+  <p>Forgot password then generate
+    <a routerLink="register">New password</a> 
+  </p>
+</form>
